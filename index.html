@@ -39,7 +39,8 @@
                             target="_blank">Sense8 na Netflix</a>
                         <a class="dropdown-item" href="http://sense8.fandom.com/">Wiki de Sense8</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Algo mais aqui</a>
+                        <a class="dropdown-item" href="https://www.instagram.com/sense8/" 
+                            target="_blank">Instagram Oficial</a>
                     </div>
                 </li>
             </ul>
@@ -75,9 +76,9 @@
     </div>
 
 
-    <div class="jumbotron jumbotron-fluid bg-primary text-white">
+    <div class="jumbotron jumbotron-fluid azulclaro text-white">
         <div class="container">
-            <h1 class="display-4">Amor Vincit Omnia</h1>
+            <h1 class="display-4 rough">Amor Vincit Omnia</h1>
             <p class="lead">Oito estranhos descobrem, após compartilharem visões de uma mulher dando a luz e, depois,
                 morrendo, que estão mentalmente conectados. A partir desse dia, Capheus, Kala, Lito, Nomi, Riley, Sun,
                 Will e Wolfgang compartilham sensações, conhecimentos e emoções, e devem lutar para sobreviver ao
@@ -91,21 +92,22 @@
                 <h1>Assista o trailer da primeira temporada</h1>
             </div>
             <div class="col-lg-9 embed-responsive">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VX-TnKoivR8" frameborder="0"
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VX-TnKoivR8"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
         </div>
     </div>
 
-    <div class="jumbotron jumbotron-fluid m-0">
+    <div class="jumbotron jumbotron-fluid laranja m-0">
         <div class="container">
-            <h2 class="display-4">O Cluster 8-8</h2>
+            <h2 class="display-4 rough">O Cluster 8-8</h2>
             <p class="lead">Embaixo estão os oito sensates, membros de um cluster (nome dado a um grupo de sensates
-                conectados)</p>
+                conectados)
+                Passe o mouse sobre as fotos (ou toque nelas!)</p>
         </div>
     </div>
-    <div class="container p-0">
+    <div class="container container-fluid p-0" style="max-width:95%">
         <div class="row p-0">
             <div class="col-xl p-0">
                 <div class="sensateText">
@@ -195,9 +197,37 @@
         </div>
     </div>
 
+    <!-- Form -->
+    <div class="container container-fluid fundoTeal mw-100 p20 azulclaro">
+        <div class="row justify-content-center">
+
+            <div class="col-lg d-flex justify-content-center">
+                <form style="width:80%">
+                    <label for="nome"> Nome:</label> <br>
+                    <input type="text" id="nome" class="" style="width:70%" onkeyup='validaNome()'>
+                    <div id='txtNome'></div>
+                    <label for="email"> Email: </label><br>
+                    <input type="email" id="email" class="" style="width:70%" onkeyup='validaEmail()'>
+                    <div id='txtEmail'></div>
+                    <label for="assunto"> Reclamação:</label><br>
+                    <textarea name="assunto" id="assunto" cols="auto" rows="auto" style="width:70%" onkeyup="validaAssunto()"></textarea><br>
+                    <div id='txtAssunto'></div>
+                    <button onclick="enviar()">Enviar</button>
+                </form>
+            </div>
+            <div class="col-sm">
+                <h3> Mande sua Reclamação</h3>
+                <p>Você também ficou inconformade com o cancelamento de Sense8? Mande aqui sua reclamação, direto pro QG da Netflix!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <hr>
     <footer>
-        <div class="row" style="height:60;">
-            <div class="col-md-12 d-flex justify-content-center">
+        <div class="row p-0" style="width:100%">
+            <div class="col p-0 d-flex justify-content-center">
                 <a href="https://github.com/LauraBrosens" target="_blank" class="pt-3 p-1">
                     <img class="img-fluid social" style="height:80px;" src="assets/img/github.png"
                         alt="IconeGithub"></a>
@@ -208,15 +238,12 @@
                     <img class="img-fluid social" src="assets/img/linkedin.png" alt="IconeLinkedin"> </a>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
+        <div class="row p-0" style="width:100%">
+            <div class="col p-0" style="width:100%">
                 <p class="text-center">&copy Laura Brosens</p>
             </div>
         </div>
     </footer>
-
-    <!-- Form -->
-
 
 
     <!-- JavaScript (Opcional) -->
